@@ -104,14 +104,12 @@
  * removed on unmap but instead are removed when the ion_buffer is freed.
  */
 #define DMA_ATTR_DELAYED_UNMAP		(1UL << 16)
-
 /*
  * DMA_ATTR_PRIVILEGED: used to indicate that the buffer is fully
  * accessible at an elevated privilege level (and ideally inaccessible or
  * at least read-only at lesser-privileged levels).
  */
 #define DMA_ATTR_PRIVILEGED		(1UL << 17)
-
 /*
  * DMA_ATTR_IOMMU_USE_LLC_NWA: Overrides the bus attributes to use the System
  * Cache(LLC) with allocation policy as Inner Non-Cacheable, Outer Cacheable:
